@@ -1,0 +1,93 @@
+/* Exercise 5 
+
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f4b482;
+    background-image: url('images/sky-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5rem;
+    /* Exercise 1 */
+   
+
+    /* Exercise 4 */
+    
+}
+
+/* Exercise 2 */
+
+
+/* Exercise 3 */
+
+
+img {
+    max-width: 100%;
+}
+
+#logo {
+    width: 100%;
+    max-width: 1200px;
+}
+
+p {
+    text-align: left;
+    max-inline-size: 60ch;
+}
+
+nav a {
+    font-weight: bold;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+header {
+    padding: 5px 0;
+    border-bottom: double 4px #664b3d;
+}
+
+main {
+    padding: 3rem 0;
+    width: 90%;
+    max-width: 1200px;
+    /* Exercise 9 */
+
+
+}
+
+.machine {
+    width: 30%;
+    background-color: #ece4d9;
+    border: solid 4px #664b3d;
+    /* Exercise 7 */
+  
+    /* Exercise 8 */
+   
+
+}
+
+/* Exercise 8 */
+
+
+
+
+
+footer {
+    border-top: double 4px #664b3d;
+    padding: 1%;
+    text-align: center;
+}
+
+footer>p {
+    font-size: 0.8rem;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Part 2 - Responsive flexbox grid */

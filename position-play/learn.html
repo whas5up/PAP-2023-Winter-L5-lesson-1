@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lynn Schirmer for CFA 2023">
+    <title>CSS Position Property</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="'https://fonts.googleapis.com/css?family=Inconsolata'" rel='stylesheet'>
+  
+</head>
+<body>
+   <h2> position: static; </h2>
+    <div class="parent" id="static-parent">
+      <h3>Static parent - static is the default value</h3>
+      <div class="static children" id="static-child1"><p>Static child 1</p></div>
+      <div class="static children" id="static-child2"><p>Static child 2</p></div>
+      <div class="static children" id="static-child3"><p>Static child 3</p></div>
+      <div class="static children" id="static-child4"><p>Static child 4</p></div>
+    </div>
+
+    <h2> position: relative; </h2>
+     <div class="parent" id="relative-parent">
+      <h3>Relative parent - relative allows overlapping</h3>
+       <div class="relative children" id="relative-child1"><p>Relative child 1</p></div>
+       <div class="relative children" id="relative-child2"><p>Relative child 2</p></div>
+       <div class="relative children" id="relative-child3"><p>Relative child 3</p></div>
+       <div class="relative children" id="relative-child4"><p>Relative child 4</p></div>
+     </div>
+
+     <h2> position: absolute; </h2>
+      <div class="parent" id="absolute-parent">
+        <h3>Absolute parent - absolute allows exact pixel placement</h3>
+        <div class="absolute children" id="absolute-child1"><p>Absolute child 1</p></div>
+        <div class="absolute children" id="absolute-child2"><p>Absolute child 2</p></div>
+        <div class="absolute children" id="absolute-child3"><p>Absolute child 3</p></div>
+        <div class="absolute children" id="absolute-child4"><p>Absolute child 4</p></div>
+      </div>
+
+      <h2> position: fixed; </h2>
+       <div class="parent" id="fixed-parent">
+        <h3>Fixed parent - fixed allows exact pixel placement relative to the screen</h3>
+         <div class="fixed children" id="fixed-child1"><p>Fixed child 1</p></div>
+         <div class="fixed children" id="fixed-child2"><p>Fixed child 2</p></div>
+         <div class="fixed children" id="fixed-child3"><p>Fixed child 3</p></div>
+         <div class="fixed children" id="fixed-child4"><p>Fixed child 4</p></div>
+       </div>
+
+       <h2 id="sticky"> position: sticky; </h2>
+</body>
+</html>
