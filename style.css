@@ -83,8 +83,8 @@ main {
     /* Exercise 7 */
     margin: 0 1% 40px 1%;
 
-    /* Exercise 8 */
-   vertical-align: top;
+    /* Exercise 8 
+   vertical-align: top;*/
 
 }
 /* Exercise 8 */
@@ -108,7 +108,8 @@ footer>p {
 
 /* Part 2 - Responsive flexbox grid */
 @media (min-width: 800px){
-   #main{ flex-wrap: wrap;
+   main { 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     flex-direction: row;
@@ -116,12 +117,14 @@ footer>p {
 }
 
 @media (min-width: 801px) and (max-width: 1099px){
-    .machine{width: 46%;
+    .machine{
+        width: 46%;
     }
  }
 
  @media (min-width: 1100px) {
-    .machine{ width: 30%;
+    .machine{
+        width: 30%;
         max-width: 450px;
     }
  }

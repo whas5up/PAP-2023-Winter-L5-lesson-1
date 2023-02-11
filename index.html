@@ -149,6 +149,45 @@
 
     <script>
         //Part 3 Javascript sorting function
+        /* My psuedocode:
+
+        1. Select all the .machine divs
+        2. Select all the anchor tags located in the menu
+        3. somefunction organize(event){
+            Select id of the clicked anchor tag
+            Loop through each div tag with:
+            .forEach(function(div)){
+                Select the classnames of the div
+                If(the id matches the div class) {
+                    Show the div
+                } else{
+                    Hide the div
+                }
+                }
+            }
+        }
+        */
+
+        //Part 3 Javascript sorting function
+        const machineDivs = document.querySelectorAll('.machine');
+        const anchorTags = document.querySelectorAll('a');
+        console.log(machineDivs, anchorTags);
+
+        function sort(event) {
+            let clicked = event.target.id;
+            machineDivs.forEach(function(category) {
+                let cardClass = category.classList;
+                if(cardClass.contains(clicked)) {
+                    category.style.display = "block";
+                } else {
+                    category.style.display = "none";
+            }});
+        }
+
+        anchorTags.forEach(function(tag){
+            tag.addEventListener('click', sort);
+        });
+
 
     </script>
 </body>
